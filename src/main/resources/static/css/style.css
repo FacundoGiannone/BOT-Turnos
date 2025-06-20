@@ -222,3 +222,67 @@ form.user .btn-user {
 [role=button] {
     cursor: pointer;
 }
+
+
+
+
+
+/* Estilos generales */
+body {
+  background: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Cabecera de la tabla */
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+}
+
+/* Celdas de la tabla */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover sobre filas */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mensaje de error */
+#error {
+  color: red;
+  margin-top: 10px;
+}
+

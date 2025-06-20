@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Personajes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 >Lista de Turno</h1>
+
+    <div id="loading">Cargando...</div>
+    <div id="error"></div>
+
+    <table id="characterTable" style="display: none;">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="characterBody">
+        <!-- Aquí se cargarán los personajes -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="/js/turno_table.js"></script>
+
+</body>
+</html>
