@@ -229,7 +229,7 @@ form.user .btn-user {
 
 /* Estilos generales */
 body {
-  background: #f0f2f5;
+  background: #0E0726;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
@@ -241,17 +241,19 @@ body {
 /* Contenedor principal */
 .container {
   background: white;
-  padding: 30px;
+  padding: 0,30px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   width: 90%;
   max-width: 800px;
   text-align: center;
+  max-height: 80vh; /* NUEVO */
+  overflow-y: auto; /* NUEVO */
 }
 
 /* Título */
 h1 {
-  color: #333;
+  color: #f2f2f2;
   margin-bottom: 20px;
 }
 
@@ -264,7 +266,7 @@ table {
 
 /* Cabecera de la tabla */
 th {
-  background-color: #4CAF50;
+  background-color: var(--primary);
   color: white;
   padding: 12px;
 }
@@ -286,3 +288,13 @@ tr:hover {
   margin-top: 10px;
 }
 
+/* Titulo fijo tablas */
+.titulo-fijo {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  color: #0E0726;
+  padding: 15px 0;
+  z-index: 100;
+  text-align: center;
+}
