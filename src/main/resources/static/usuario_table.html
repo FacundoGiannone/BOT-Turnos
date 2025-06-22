@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Personajes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- usuario.html -->
+  <div class="container">
+    <h1 style="color: #0E0726;">Lista de Usuarios</h1>
+
+    <div id="loading">Cargando...</div>
+    <div id="error" style="color: red;"></div>
+
+    <table id="characterTable" style="display: none;">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Telefono</th>
+        </tr>
+      </thead>
+      <tbody id="characterBody">
+        <!-- Datos desde JS -->
+      </tbody>
+    </table>
+  </div>
+
+
+
+</body>
+<script src="/js/usuario_table.js"></script>
+
+</html>

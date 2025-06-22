@@ -1,0 +1,44 @@
+:root {
+  --primary: #391BA6;
+  --background: #0E0726;
+  --accent: #F2E635;
+  --highlight: #F2C641;
+  --light: #F2F2F2;
+
+  --font-main: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--background);
+  color: var(--light);
+}
+
+header, nav, section, footer {
+  padding: 1rem;
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  color: var(--light);
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--highlight);
+  color: var(--background);
+}
+
+.card {
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}

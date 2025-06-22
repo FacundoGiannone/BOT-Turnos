@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Personajes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 style="color: #0E0726;">Lista de Admin</h1>
+
+    <div id="loading">Cargando...</div>
+    <div id="error"></div>
+
+    <table id="characterTable" style="display: none;">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Usuario</th>
+		  <th>Contraseña</th>
+        </tr>
+      </thead>
+      <tbody id="characterBody">
+        <!-- Aquí se cargarán los personajes -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="/js/admin_table.js"></script>
+
+</body>
+</html>

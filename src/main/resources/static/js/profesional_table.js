@@ -1,0 +1,36 @@
+setTimeout(() => {
+  const loadingDiv = document.getElementById('loading');
+  const errorDiv = document.getElementById('error');
+  const table = document.getElementById('characterTable');
+  const tbody = document.getElementById('characterBody');
+
+
+  fetch('http://localhost:8080/profesional')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('❌ No se pudo cargar la lista de profesionales.');
+      }
+      return response.json();
+    })
+    .then(data => {
+      loadingDiv.style.display = 'none';
+
+      data.forEach(profesional => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${profesional.id}</td>
+          <td>${profesional.nombre}</td>
+          <td>${profesional.apellido}</td>
+          <td>${profesional.especialidad}</td>
+        `;
+        tbody.appendChild(row);
+      });
+
+      table.style.display = 'table';
+    })
+    .catch(error => {
+      loadingDiv.style.display = 'none';
+      errorDiv.innerText = error.message;
+      console.error("❌ Error en fetch:", error);
+    });
+}, 100);
