@@ -12,34 +12,18 @@
   <header>
     <h1>Gestión de Turnos</h1>
     <nav>
-      <button onclick="showView('usuarios')">Usuarios</button>
-      <button onclick="showView('turnos')">Turnos</button>
-      <button onclick="showView('agenda')">Agenda</button>
+      <button onclick="showView('usuario_table')">Usuarios</button>
+      <button onclick="showView('turno_table')">Turnos</button>
+      <button onclick="showView('profesional_table')">Profesionales</button>
+      <button onclick="showView('servicio_table')">Servicios</button>
+      <button onclick="showView('admin_table')">Admins</button>
     </nav>
   </header>
 
   <main id="content">
     <section>
-      <h2>Usuarios</h2>
-      <div class="card">
-        <label>Buscar por nombre:</label>
-        <input type="text" id="buscarUsuario" />
-        <button onclick="buscarUsuario()">Buscar</button>
-      </div>
       <div id="resultadoUsuarios"></div>
     </section>
-
-    <script>
-      function buscarUsuario() {
-        const nombre = document.getElementById("buscarUsuario").value;
-        fetch(`/usuario?nombre=${encodeURIComponent(nombre)}`)
-          .then(res => res.json())
-          .then(data => {
-            const resultado = document.getElementById("resultadoUsuarios");
-            resultado.innerHTML = data.map(u => `<div class="card">${u.nombre} - ${u.telefono}</div>`).join('');
-          });
-      }
-    </script>
 
   </main>
 

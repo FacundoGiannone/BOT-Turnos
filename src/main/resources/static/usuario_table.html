@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Lista de Personajes</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+  <!-- usuario.html -->
   <div class="container">
-    <h1 >Lista de Usuarios</h1>
+    <h1>Lista de Usuarios</h1>
 
     <div id="loading">Cargando...</div>
-    <div id="error"></div>
+    <div id="error" style="color: red;"></div>
 
     <table id="characterTable" style="display: none;">
       <thead>
@@ -23,12 +26,14 @@
         </tr>
       </thead>
       <tbody id="characterBody">
-        <!-- Aquí se cargarán los personajes -->
+        <!-- Datos desde JS -->
       </tbody>
     </table>
   </div>
 
-  <script src="/js/usuario_table.js"></script>
+
 
 </body>
+<script src="/js/usuario_table.js"></script>
+
 </html>
