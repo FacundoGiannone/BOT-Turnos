@@ -21,6 +21,9 @@ setTimeout(() => {
           <td>${turno.id}</td>
           <td>${turno.fecha}</td>
           <td>${turno.hora}</td>
+          <td>${turno.usuario.apellido+" "+turno.usuario.nombre}</td>
+          <td>${turno.profesional.apellido+" "+turno.profesional.nombre}</td>
+          <td>${turno.servicio.nombre }</td>
           <td>${turno.estado}</td>
         `;
         tbody.appendChild(row);
