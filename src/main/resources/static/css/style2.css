@@ -42,3 +42,29 @@ button:hover {
   margin: 1rem 0;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
+
+.horario-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.horario-table th,
+.horario-table td {
+  border: 1px solid var(--light);
+  padding: 10px;
+  text-align: center;
+  min-width: 100px;
+  height: 60px;
+}
+
+.horario-table th {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.turno-ocupado {
+  background-color: var(--highlight);
+  color: var(--background);
+  font-weight: bold;
+}
